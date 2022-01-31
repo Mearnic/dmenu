@@ -9,10 +9,12 @@ static const char *fonts[] = {
    "FiraCode Nerd Font:size=15",
 };
 static const char *prompt      = NULL;      /* -p  option; prompt to the left of input field */
-static const char *colors[SchemeLast][10] = {
+static const char *colors[SchemeLast][11] = {
 	/*     fg         bg       */
    [SchemeNorm] = { "#bbbbbb", "#222222", "#222222" },
    [SchemeSel] = { "#eeeeee", "#005577", "#005577" },
+	[SchemeSelHighlight] = { "#876543", "#005577", "#005577" },
+	[SchemeNormHighlight] = { "#876543", "#222222", "#222222" },
    [SchemeOut] = { "#000000", "#00ffff", "#00ffff" },
    [SchemeHighlight] = {"#f1fa8c", "#596377", "#3E485B"},
    [SchemeHover] = {"#ffffff", "#353D4B", "#3E485B"},
